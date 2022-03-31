@@ -1,3 +1,16 @@
+
+# My Installation
+
+```
+sudo apt update
+sudo apt-get install -y openjdk-11-jdk --fix-missing
+python ./ts_scripts/install_dependencies.py --cuda=cu111
+pip install torchserve torch-model-archiver torch-workflow-archiver
+export PATH=$HOME/.local/bin:$PATH
+```
+
+
+
 # TorchServe
 
 TorchServe is a flexible and easy to use tool for serving and scaling PyTorch models in production.
